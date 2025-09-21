@@ -1,0 +1,2 @@
+# SchmattieAI
+Lol private bot
