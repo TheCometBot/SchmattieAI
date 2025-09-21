@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-from flask import Flask, redirect, urlfor
+from flask import Flask, redirect, url_for
 import threading
 import time
 import aiohttp
@@ -58,7 +58,7 @@ def _health():
 
 @app.route('/')
 def home():
-    return redirect(urlfor("health"))
+    return redirect(url_for("health"))
 
 @app.route('/health/')
 def health():
