@@ -69,7 +69,7 @@ def run_discord_bot():
     bot.run(BOT_TOKEN)
 
 if __name__ == "__main__":
-    os.mkdirs("generated_images", exist_ok=True)
+    os.makdirs("generated_images", exist_ok=True)
     # Discord-Bot im Hintergrund starten
     discord_thread = threading.Thread(target=run_discord_bot)
     discord_thread.start()
